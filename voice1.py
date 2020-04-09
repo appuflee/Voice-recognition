@@ -6,6 +6,7 @@ from gtts import gTTS
 
 def speak(text):
     tts = gTTS(text=text, lang="en")
+    print("we are in speak")
     filename = "voice.mp3"
     tts.save(filename)
     playsound.playsound(filename)
